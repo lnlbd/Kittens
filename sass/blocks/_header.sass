@@ -2,7 +2,9 @@
   background-image: url(../img/header-image.png)
   background-repeat: no-repeat
   background-size: cover
-  padding: 40px 130px 48px 140px
+  height: 252px
+  padding: 26px 130px 48px 140px
+  box-sizing: border-box
   position: relative
   &::before
     content: ''
@@ -14,32 +16,35 @@
     height: 100%
     width: 100%
     background-color: rgba(31, 32, 33, 0.79)
-  &-wrapper
+
+  &-navbar
     display: flex
-    width: 1180px
+    max-width: 1180px
+    width: 100%
     position: relative
-    justify-content: space-between
+    align-items: center
+  &__text
+    &:hover
+      cursor: pointer
   &__logo
     width: 78px
     height: 78px
     margin-right: 120px
-  &__navbar
+  &__menu
     display: flex
     justify-content: space-between
     color: $light
-    font-family: Montserrat
-    font-style: normal
-    font-weight: normal
     font-size: 18px
     line-height: 22px
     width: 491px
+
   &__contacts
+    position: absolute
     color: $light
-    font-family: Montserrat
-    font-style: normal
     font-weight: bold
     font-size: 24px
     line-height: 29px
+    right: 0
   &__call
     display: block
     font-weight: normal
@@ -48,11 +53,15 @@
     text-align: right
     margin-top: 3px
   &__result
+    display: block
     position: relative
     color: $light
-    font-family: Montserrat
-    font-style: normal
     font-weight: bold
     font-size: 38px
     line-height: 46px
     margin-top: 40px
+.container
+  display: flex
+  max-width: 1180px
+  margin: auto
+  flex-wrap: wrap

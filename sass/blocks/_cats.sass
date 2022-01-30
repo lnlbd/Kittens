@@ -1,0 +1,142 @@
+.main
+  max-width: 1180px
+  margin: auto
+.container
+  display: flex
+  max-width: 1180px
+  margin: auto
+  flex-wrap: wrap
+  flex-direction: row
+  position: relative
+.sort
+  display: flex
+  width: 467px
+  justify-content: space-between
+  font-weight: bold
+  font-size: 18px
+  line-height: 22px
+  padding-top: 37px
+  padding-bottom: 37px
+  &__text
+    font-weight: normal
+    &:hover
+      cursor: pointer
+  &__image
+    &:hover
+      cursor: pointer
+  &__pointer
+    width: 15px
+    height: 15px
+    background-color: $light
+    border: none
+  &__container
+    &:hover
+      cursor: pointer
+
+.offer
+  max-width: 1180px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: auto
+  &__block
+    max-width: 380px
+    max-height: 521px
+    background-color: #F3F3F3
+    margin-bottom: 27px
+  &__image
+    position: relative
+  &__heart
+    position: absolute
+    right: 0
+    margin-top: 35px
+    margin-right: 35px
+    &:hover
+      cursor: pointer
+  &__text
+    max-width: 320px
+    margin: auto
+  &__header
+    margin: 0
+    margin-top: 29px
+    margin-bottom: 22px
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+  &-description
+    display: flex
+    justify-content: space-between
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    padding-bottom: 22px
+    &__line
+      height: 26px
+      width: 4px
+      background-color: #6EBBD3
+    &__color
+      font-size: 12px
+      line-height: 15px
+    &__age
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+    &__amount
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+  &__price-tag
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+  &__button
+    width: 100%
+    background-color: #6EBBD3
+    border: none
+    padding: 21px 55px 22px 56px
+    color: $light
+    margin-top: 22px
+    border-bottom-left-radius: 6px
+    border-bottom-right-radius: 6px
+    &:hover
+      cursor: pointer
+    &:active
+      opacity: 0.8
+    &-sold
+      width: 100%
+      background: #1F2021
+      border: none
+      padding: 21px 55px 22px 56px
+      color: $light
+      margin-top: 22px
+      border-bottom-left-radius: 6px
+      border-bottom-right-radius: 6px
+      &:hover
+      cursor: pointer
+      &:active
+        opacity: 0.8
+
+.section
+  &__more
+    margin: auto
+    margin-top: 68px
+    padding: 24px 129px
+    border: 1px solid #CACACA
+    border-radius: 10px
+    background-color: $light
+    font-size: 14px
+    line-height: 17px
+    margin-bottom: 83px
+    &:hover
+      cursor: pointer
+  &__fix
+    position: absolute
+    right: 0px
+    bottom: 50px
+    height: 60px
+    width: 60px
+    background-color: #6EBBD3
+    border: none
+    &:hover
+      cursor: pointer
+      
